@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10002</projectId>
+    <projectKey>SWAG</projectKey>
+    <exportDate>2022-12-13 16:33:48 UTC</exportDate>
+    <folders>
+        <folder fullPath="Cliente cadastrado" index="0"/>
+        <folder fullPath="Cliente não cadastrado" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="76858691" key="SWAG-T6">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-12 20:45:18 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cliente cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 1: Cliente com cadastro tenta logar]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio com cadastro acessa a tela de login atrav&eacute;s do site x]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza a tela de login]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio escreve seu<em>&nbsp;username</em> e senha, e clica em &quot; Login &quot;]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio digita o <em>username&nbsp;</em>no campo <em>usuername</em>, e digita a senha de 8 d&iacute;gitos no campo senha. Em seguida clica no bot&atilde;o &quot; Login&quot;]]></expectedResult>
+                        <testData><![CDATA[<em>username</em>: tester<br /><em>password</em>: q_a_team]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio consegue fazer o login pois seu <em>username</em> e senha est&atilde;o contidos na base de dados.]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio logado]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76932997" key="SWAG-T8">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-13 12:04:25 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cliente cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 2: Cliente com cadastro tenta redefinir senha]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio comcadastro acessa a tela de login atrav&eacute;s do site x]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza a tela de login]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clicar no bot&atilde;o &ldquo; Redefinir senha&rdquo;]]></description>
+                        <expectedResult><![CDATA[Uma caixa de texto dever&aacute; ser exibida para o usu&aacute;rio inserir o e-mail;]]></expectedResult>
+                        <testData><![CDATA[e-mail: q_a_team@gmail.com]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica em &quot;Enviar&quot; ap&oacute;s digitar seu e-mail]]></description>
+                        <expectedResult><![CDATA[<p>Um e-mail deve ser enviado ao e-mail cadastrado com um link para redefini&ccedil;&atilde;o da senha antiga.</p>A mensagem &ldquo;Verifique seu e-mail cadastrado e siga o passo-a-passo para a recupera&ccedil;&atilde;o da senha atrav&eacute;s do link enviado&rdquo; dever&aacute; ser exibida ao usu&aacute;rio]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[<p>O usu&aacute;rio dever&aacute; &nbsp;abrir o pr&oacute;prio e-mail e clica no link enviado</p>]]></description>
+                        <expectedResult><![CDATA[<p>Uma nova tela deve ser exibida e o usu&aacute;rio para que o usu&aacute;rio &nbsp;consiga escrever a nova senha ( 8 d&iacute;gitos) e confirmar a senha anteriormente digitada em uma caixa de texto;</p>]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[<p>O usu&aacute;rio &nbsp;deve confirmar na mesma tela a senha digitada e apertar no botao &ldquo; Confirmar nova senha&rdquo;</p>]]></description>
+                        <expectedResult><![CDATA[<p>A mensagem &ldquo; Sua nova senha foi redefinida&rdquo; dever&aacute; ser exibida.&nbsp;</p><p>O link enviado para o e-mail do usu&aacute;rio dever&aacute; ser invalidado e o usu&aacute;rio consegue enfim redefinir a senha.</p><br />]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76934003" key="SWAG-T9">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-13 12:30:33 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cliente cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 3: Cliente com cadastro tenta recuperar a senha]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio com cadastro acessa a tela de login atrav&eacute;s do site x]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza a tela de login]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clicar no bot&atilde;o &ldquo; Recuperar senha&rdquo;]]></description>
+                        <expectedResult><![CDATA[Uma caixa de texto dever&aacute; ser exibida para o usu&aacute;rio inserir o e-mail;]]></expectedResult>
+                        <testData><![CDATA[e-mail: q_a_team@gmail.com]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica em &quot;Enviar&quot; ap&oacute;s digitar seu e-mail]]></description>
+                        <expectedResult><![CDATA[Um e-mail deve ser enviado ao e-mail cadastrado com um link para redefini&ccedil;&atilde;o da senha antiga.<br />A mensagem &ldquo;Verifique seu e-mail cadastrado e siga o passo-a-passo para a recupera&ccedil;&atilde;o da senha atrav&eacute;s do link enviado&rdquo; dever&aacute; ser exibida ao usu&aacute;rio]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[O usu&aacute;rio dever&aacute; &nbsp;abrir o pr&oacute;prio e-mail e clica no link enviado]]></description>
+                        <expectedResult><![CDATA[Uma nova tela deve ser exibida e o usu&aacute;rio para que o usu&aacute;rio &nbsp;consiga escrever a nova senha ( 8 d&iacute;gitos) e confirmar a senha anteriormente digitada em uma caixa de texto;]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[O usu&aacute;rio &nbsp;deve confirmar na mesma tela a senha digitada e apertar no botao &ldquo; Confirmar nova senha&rdquo;]]></description>
+                        <expectedResult><![CDATA[A mensagem &ldquo; Sua nova senha foi redefinida&rdquo; dever&aacute; ser exibida.&nbsp;<br />O link enviado para o e-mail do usu&aacute;rio dever&aacute; ser invalidado e o usu&aacute;rio consegue enfim redefinir a senha.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76934146" key="SWAG-T10">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-13 12:33:09 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cliente cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 4: Cliente com cadastro tenta fazer logout]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[O usu&aacute;rio est&aacute; logado em qualquer sess&atilde;o do site]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza no canto superior direito o bot&atilde;o &quot; Logout&quot;]]></expectedResult>
+                        <testData><![CDATA[<em>username</em>: tester<br /><em>password</em>: q_a_team]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[O usu&aacute;rio clica no bot&atilde;o &quot; Logout&quot;]]></description>
+                        <expectedResult><![CDATA[<p>O usu&aacute;rio consegue enfim fazer o logout</p>]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="76851515" key="SWAG-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-12 17:04:32 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>18000000</estimatedTime>
+            <folder><![CDATA[Cliente não cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 1: Cliente sem cadastro deseja criar conta]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given that the customer is on the login screen;
+
+And want to creat account by clicking on "Create account";
+
+When the user finishes filling in the required fields (on the account creation screen), the user clicks on the “Confirm” button;
+
+Then your account will be created and the message “Account created successfully” should be displayed.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76851648" key="SWAG-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-12 17:10:00 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cliente não cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 2: Cliente sem cadastro tenta fazer login]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given that the customer is on the login screen;
+
+When adding an unregistered username;
+
+And add an 8-digit password in the password field;
+
+When you press the “Login” button;
+
+Then the message “Invalid password and/or E-mail” should appear to the user.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76858472" key="SWAG-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-12 20:40:01 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cliente não cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 3: Cliente sem cadastro tenta redefinir a senha]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given that the customer is on the login screen;
+
+And is not registered in the system;
+
+When customer click on the “Reset password” button, a text box appears for him to enter the e-mail;
+
+Then the message “Invalid password and/or E-mail” should appear to the user.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="76932896" key="SWAG-T7">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Tuíra Teixeira</createdBy>
+            <createdOn>2022-12-13 12:01:48 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Cliente não cadastrado]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cenário 4: Cliente sem cadastro tenta recuperar senha]]></name>
+            <owner>70121:070029a2-9690-4579-8070-d8886f1f8ae8</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given that the customer is on the login screen;
+
+And is not registered in the system;
+
+When customer click on the “Forgot password” button, a text box appears for him to enter the e-mail;
+
+Then the message “Invalid password and/or E-mail” should appear to the user.]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
